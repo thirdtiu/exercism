@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+        // function words(yourString){
+        //     var obj = {};
+        //     var slicedString = yourString.split(" ");
+        //     var words;
+        //     for (i = 0; i = slicedString.length; i++){
+        //         words = words + slicedString[i];
+        //     }
+        //     $('#content').html(words);
+        // }
+
+        $(function(){
+            var str = "Hello World";
+            var slicedString = str.split(" ");
+            var words;
+            for (i=0; i <= slicedString.length; i++){
+                words = words + slicedString[i] + " ";
+            }
+            $('#content').html(slicedString);
+        });
+    </script>
+</head>
+<body>
+    <div id="content"></div>
+</body>
+</html>
