@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        var PhoneNumber = function(yourNumber){
+            var REGEX = /[()-\s+]/g;
+            var number = yourNumber.replace(REGEX, '');
+            this.number = function(){
+                // return yourNumber;
+                document.write(number);
+            }
+        }
+
+        phonenumber = new PhoneNumber('123-(5)');
+        phonenumber.number();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
