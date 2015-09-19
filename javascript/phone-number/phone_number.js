@@ -13,16 +13,15 @@ var PhoneNumber = function(yourNumber){
         // get first digit
         var firstDigit = number.toString()[0];
         if (number.toString().length == 10){
-            return number;    
+            return number;
         } else if (number.toString().length == 11 && parseInt(firstDigit) == 1){
             number = number.toString();
             number = number.slice(1);
-            return number;
         }
         else{
             number = '0000000000';
-            return number;
         }
+        return number;
     }
     this.areaCode = function(){
         number = number.toString();
